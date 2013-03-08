@@ -118,6 +118,7 @@ class AdapterTest extends \PHPUnit_Framework_TestCase
     {
         $value = $this->object->setpassword("Soliant");
         $this->assertTrue($value instanceof $this->object);
+        $this->assertEquals($this->object->getPassword(), 'Soliant');
     }
 
     /**
